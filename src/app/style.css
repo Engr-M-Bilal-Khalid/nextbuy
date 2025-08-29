@@ -1,0 +1,312 @@
+.fontImpact {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.fontTungsten {
+  font-family: Tungsten;
+}
+
+.fontIntegral {
+  font-family: "Integral CF", "Poppins", "Montserrat", Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.fontSatoshi {
+  font-family: "Satoshi", "General Sans", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 1.35;
+}
+
+.fontSatoshiLi {
+  font-family: "Satoshi", "General Sans", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+  line-height: 1.35;
+}
+
+.fontArial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+  line-height: 1.35;
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+.nav {
+  font-family:
+    "Proxima Nova",
+    "Open Sans",
+    "Avenir Next",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  /* adjust to taste */
+  letter-spacing: normal;
+}
+
+
+
+.star-animate {
+  animation: spin 3s linear infinite, pulse 1.5s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+}
+
+
+.classical-animate {
+  animation:
+    rotateStar 2.5s cubic-bezier(.42, 0, .58, 1) infinite,
+    pulseStar 1.2s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotateStar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-30deg);
+  }
+
+  30% {
+    transform: rotate(40deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+
+  90% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulseStar {
+
+  0%,
+  100% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.07;
+  }
+}
+
+
+.classical-shimmer {
+  animation:
+    shimmerStar 1.8s ease-in-out infinite,
+    scaleStar 1.8s ease-in-out infinite;
+  transform-origin: 50% 50%;
+  filter: brightness(1);
+}
+
+@keyframes shimmerStar {
+
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  10% {
+    filter: brightness(1.2);
+  }
+
+  50% {
+    filter: brightness(1.7);
+  }
+
+  80% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes scaleStar {
+
+  0%,
+  100% {
+    scale: 1;
+  }
+
+  45% {
+    scale: 1.1;
+  }
+
+  55% {
+    scale: 0.98;
+  }
+
+  70% {
+    scale: 1.03;
+  }
+}
+
+
+/* Versace */
+.versace {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Zara */
+.zara {
+  font-family: 'Didot', serif;
+}
+
+/* Gucci */
+.gucci {
+  font-family: 'Garamond', serif;
+}
+
+/* Prada */
+.prada {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Calvin Klein */
+.calvinklein {
+  font-family: 'Futura', 'Raleway', sans-serif;
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -75%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0) 100%);
+  animation: shine 1ms infinite;
+  pointer-events: none;
+}
+@keyframes shine {
+  0% { left: -75%; }
+  100% { left: 100%; }
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.shine-text {
+  background: linear-gradient(
+    90deg,
+    #171918,
+    #525252,
+    #171918
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+.shine-text-white {
+  background: linear-gradient(
+    90deg,
+    #fdfdfd,
+    #ffffffc2,
+    #fcfcfc
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+
+
+.bg-instagram-gradient {
+  background-image: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc274f,
+    #cc2366,
+    #bc1888,
+    #a73c9c,
+    #833ab4
+  );
+}
+
+.shine-effect-skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: #d1d5db; /* Tailwind bg-gray-300 */
+  border-radius: 6px; /* optional */
+}
+
+.shine-effect-skeleton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%) skewX(-12deg);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.06) 45%,
+    rgba(255, 255, 255, 0.16) 55%,
+    rgba(255, 255, 255, 0.06) 65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shine-sweep 1.8s ease-in-out infinite;
+  will-change: transform;
+  pointer-events: none;
+}
+
+@keyframes shine-sweep {
+  0% {
+    transform: translateX(-120%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(120%) skewX(-12deg);
+  }
+}
+
