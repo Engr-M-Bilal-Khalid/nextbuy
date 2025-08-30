@@ -6,10 +6,10 @@ import { useProductContext } from "@/context/ProductContext";
 import Link from "next/link";
 
 export default function Page() {
-    const {  productWatches, loading } = useProductContext();
+    const {  productWatches, watchesloading } = useProductContext();
     return (
         <>
-            {loading ? (
+            {watchesloading ? (
                 <>
                     <ProductGridSkeleton categoryName="Smart watches" className="mt-5 lg:justify-center lg:items-center" count={10}/>
                 </>

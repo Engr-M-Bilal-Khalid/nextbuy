@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import DemographicCard from "./components/overview/DemographicCard";
+// import DemographicCard from "./components/overview/DemographicCard";
 import MonthlySalesChart from "./components/overview/MonthlySalesChart";
 import MonthlyTarget from "./components/overview/MonthlyTarget";
 import { OverviewMetrics } from "./components/overview/OverviewMetrics";
@@ -24,9 +24,9 @@ export default function Page() {
                 <StatisticsChart />
             </div>
 
-            <div className="col-span-12 xl:col-span-5">
+            {/* <div className="col-span-12 xl:col-span-5">
                 <DemographicCard />
-            </div>
+            </div> */}
 
             <div className="col-span-12 xl:col-span-7">
                 <RecentOrders />

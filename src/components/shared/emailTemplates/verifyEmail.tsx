@@ -1,4 +1,4 @@
-
+"use client"
 
 export const buildEmail = (email: string, code: string) => ({
     from: "Ecommerce Store <onboarding@resend.dev>",

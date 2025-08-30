@@ -18,10 +18,23 @@ export const removeFromCartApi = async (cartUserId: string, variantId: string) =
   return res.json();
 };
 
+// lib/api/fetchCart.ts
 export const fetchCartApi = async (cartUserId: string) => {
-  const res = await fetch(`/api/cart/fetchCartData/${cartUserId}`);
+  const res = await fetch("/api/cart/fetchCartData", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ cartUserId }),
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch cart data");
+  }
+
   return res.json();
 };
+
 
 
 export const updateCartQuantityApi = async (cartUserId: string, variantId: string, quantity: number) => {
